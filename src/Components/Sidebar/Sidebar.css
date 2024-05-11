@@ -1,0 +1,30 @@
+.Sidebar {
+  margin-top: 2rem;
+  background-color: #2d3250;
+  border-top: 5px solid #171b26;
+  padding: 2rem 2rem 2rem 5rem;
+}
+
+.Sidebar .anime {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+}
+
+.Sidebar .anime img {
+  width: 100%;
+  border-radius: 5px;
+  border: 5px solid #171b26;
+}
+
+.Sidebar .anime a {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #fff;
+}
+
+.Sidebar .anime a h4 {
+  font-size: 1.1rem;
+}

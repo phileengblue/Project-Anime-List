@@ -1,0 +1,69 @@
+.homepage {
+  background-color: #171b26;
+  padding: 3rem;
+}
+
+.homepage header {
+  padding: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  transition: all .4s ease-in-out;
+}
+
+.homepage header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.homepage header .search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.homepage header .search-container button {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem 1.5rem;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+  font-family: inherit;
+  border: 5px solid #2d3250;
+}
+
+.homepage header form {
+  position: relative;
+  width: 60%;
+}
+
+.homepage header form .input-control {
+  position: relative;
+  transition: all .4s ease-in-out;
+}
+
+.homepage header form .input-control input {
+  width: 100%;
+  padding: .7rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  border: 5px solid #2d3250;
+  transition: all .4s ease-in-out;
+}
+
+.homepage header form .input-control button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

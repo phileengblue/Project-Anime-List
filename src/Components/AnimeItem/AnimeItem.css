@@ -1,0 +1,122 @@
+.AnimeItem {
+    padding: 3rem;
+    background-color: #171b26;
+    color: #ffffff;
+}
+
+.AnimeItem h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(to right, #a855f7, #27ae60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .4s ease-in-out;
+}
+
+.title {
+    margin: 3rem 0;
+    font-size: 2rem;
+    cursor: pointer;
+    background: linear-gradient(to right, #a855f7 23%, #27ae60);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.description {
+    margin-top: 2rem;
+    color: #6c7983;
+    line-height: 1.7rem;
+}
+
+.description button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.trailer-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trailer-con iframe {
+    border: 5px solid #2d3250;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #1f2535;
+}
+
+.details {
+    background-color: #1f2535;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 5px solid #2d3250;
+    color: #ffffff;
+}
+
+.detail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.image img {
+    border-radius: 7px;
+}
+
+.anime-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.anime-details p {
+    display: flex;
+    gap: 1rem;
+}
+
+.anime-details p span:first-child {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.characters {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-gap: 2rem;
+    background-color: #1f2535;
+    padding: 2rem;
+    border-radius: 20px;
+    border: 5px solid #2d3250;
+}
+
+
+.character {
+    padding: 0.4rem;
+    border-radius: 7px;
+    background-color: #171b26;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.character img {
+    width: 100%;
+}
+
+.character h4 {
+    padding: .5rem 0;
+    color: #ffffff;
+}
+
+.character p {
+    color: #27ae60;
+}
+
+.character:hover {
+    transform: translateY(-5px);
+}
