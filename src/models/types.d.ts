@@ -7,7 +7,7 @@ export interface Anime {
       large_image_url: string;
     };
   };
-  score?: number; // Score è un campo opzionale
+  score?: number; 
 }
 
 // Interfaccia per la struttura di un'immagine
@@ -80,15 +80,15 @@ export interface GlobalState {
   isSearch: boolean;
   searchResults: Anime[];
   loading: boolean;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Funzione per gestire il cambiamento nell'input
-  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void; // Funzione per gestire l'invio del modulo
-  searchAnime: (anime: string) => void; // Funzione per cercare un anime
-  search: string; // Stringa di ricerca
-  getPopularAnime: () => Promise<void>; // Funzione per ottenere gli anime popolari
-  getUpcomingAnime: () => Promise<void>; // Funzione per ottenere gli anime in arrivo
-  getAiringAnime: () => Promise<void>; // Funzione per ottenere gli anime in onda
-  getAnimePictures: (id: number) => Promise<void>; // Funzione per ottenere le immagini di un anime
-  favoriteAnime: Anime[]; // Array degli anime preferiti
-  addToFavorites: (anime: Anime) => void; // Funzione per aggiungere un anime ai preferiti
-  removeFromFavorites: (mal_id: number) => void; // Funzione per rimuovere un anime dai preferiti
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+  searchAnime: (anime: string) => void; 
+  search: string; 
+  getPopularAnime: () => Promise<void>; 
+  getUpcomingAnime: () => Promise<void>; 
+  getAiringAnime: () => Promise<void>; 
+  getAnimePictures: (id: number) => Promise<void>; 
+  favoriteAnime: Anime[]; 
+  addToFavorites: (anime: Anime) => void;
+  removeFromFavorites: (mal_id: number) => void;
 }

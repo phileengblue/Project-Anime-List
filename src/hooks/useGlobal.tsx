@@ -29,13 +29,13 @@ const reducer = (state: GlobalState, action: Action): GlobalState => {
       const isDuplicate = state.favoriteAnime.some(item => item.mal_id === action.payload.mal_id);
       if (!isDuplicate) {
         const updatedFavorites = [...state.favoriteAnime, action.payload];
-        saveFavoritesToLocalStorage(updatedFavorites); // Salva i preferiti nel localStorage
+        saveFavoritesToLocalStorage(updatedFavorites); 
         return { ...state, favoriteAnime: updatedFavorites };
       }
       return state;
     case 'remove_from_favorites':
       const filteredFavorites = state.favoriteAnime.filter(anime => anime.mal_id !== action.payload);
-      saveFavoritesToLocalStorage(filteredFavorites); // Salva i preferiti nel localStorage
+      saveFavoritesToLocalStorage(filteredFavorites); 
       return { ...state, favoriteAnime: filteredFavorites };
     case 'load_favorites':
       return { ...state, favoriteAnime: action.payload };
@@ -74,7 +74,7 @@ export const GlobalContextProvider: React.FC<{ children: ReactNode }> = ({ child
   // useEffect per caricare i preferiti memorizzati
   useEffect(() => {
     const storedFavorites = localStorage.getItem('favorites');
-    console.log('Stored Favorites:', storedFavorites); // Verifica se i dati vengono caricati correttamente
+    console.log('Stored Favorites:', storedFavorites);
     if (storedFavorites) {
       dispatch({ type: 'load_favorites', payload: JSON.parse(storedFavorites) });
     }
@@ -82,7 +82,7 @@ export const GlobalContextProvider: React.FC<{ children: ReactNode }> = ({ child
 
   // Effetto per salvare i preferiti aggiornati
   useEffect(() => {
-    console.log('Updated Favorites:', state.favoriteAnime); // Verifica se i preferiti vengono aggiornati correttamente
+    console.log('Updated Favorites:', state.favoriteAnime); 
     saveFavoritesToLocalStorage(state.favoriteAnime);
   }, [state.favoriteAnime]);
 
